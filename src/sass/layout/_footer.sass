@@ -1,0 +1,39 @@
+
+
+.app-footer
+    height: $footer_height
+    background-color: #000000
+    display: flex
+    flex-flow: column wrap
+    justify-content: center
+    align-items: center
+    box-shadow: 0 0 5px black
+    margin-top: 20px
+
+    &__phone
+        opacity: .5
+
+    &__social
+        display: flex
+        justify-content: center
+        align-items: center
+        opacity: .5
+        ol
+            margin-left: 10px
+            display: flex
+            li
+                a
+                    img
+                        isolation: isolate
+                        width: 24px
+                        height: 24px
+                        padding: 2px
+                        position: relative
+
+                        &::before
+                            content: ''
+                            position: absolute
+                            top: 0
+                            left: 0
+                            bottom: 0
+                            right: 0

@@ -1,0 +1,37 @@
+@import './module'
+
+html, body
+    min-width: 100%
+    width: 100%
+    max-width: 100%
+    min-height: 100vh
+
+#root
+    min-width: 100%
+    width: 100%
+    max-width: 100%
+    overflow: hidden auto
+
+.App
+    background-color: #2b2b2b
+    overflow: hidden auto
+    min-height: 100vh
+    font-family: 'Ubuntu'
+    overflow: hidden auto
+
+.app-wrapper
+    margin-top: #{$header_height+30px}
+    width: 100%
+    min-height: calc(100vh - #{$header_height + ($footer_height + 50px)})
+    display: flex
+    justify-content: center
+    overflow: hidden hidden
+
+.app-content
+    padding-left: 20px
+    padding-right: 20px
+    min-width: css-min(calc(100vw - 40px), $contentWidth)
+    width: css-min(calc(100vw - 40px), $contentWidth)
+    max-width: css-min(calc(100vw - 40px), $contentWidth)
+    overflow: hidden hidden
+    max-width: $contentWidth

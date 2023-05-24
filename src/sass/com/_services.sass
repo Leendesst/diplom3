@@ -1,0 +1,75 @@
+.services
+    &__item
+        padding: 10px 10px 7px 10px
+        background: #00000036
+        border: 3px solid #9b01017a
+        border-bottom-right-radius: 30px
+        border-top-left-radius: 30px
+        margin-bottom: 10px
+        box-shadow: 0 10px 10px -5px black
+        display: flex
+
+        +mobile()
+            flex-direction: column-reverse
+
+        &:nth-child(even)
+            flex-direction: row-reverse
+
+            +mobile()
+                flex-direction: column-reverse
+
+            .services__item__image
+                img
+                    border-top-left-radius: unset
+                    border-bottom-right-radius: 20px
+
+        &__image
+            min-width: 320px
+            max-width: 320px
+            max-height: 320px
+
+            +mobile()
+                min-width: unset
+                max-width: unset
+                display: flex
+                flex: 1 1
+                justify-content: center
+                align-content: center
+
+            img
+                max-width: 320px
+                max-height: 320px
+                border-top-left-radius: 20px
+
+                +mobile()
+                    max-width: 100%
+                    flex: 1
+                    border-top-left-radius: unset
+                    border-bottom-right-radius: 20px
+
+        &__content
+            flex: 1
+            h2
+                font-size: 24px
+                line-height: 30px
+                margin-right: auto
+                text-align: center
+            p
+                padding: 5px
+                text-align: justify
+
+        &__head
+            margin-bottom: 10px
+            align-items: center
+            display: flex
+            &__title
+                font-size: 24px
+                line-height: 30px
+                margin-right: auto
+            &__date
+                justify-self: right
+                font-size: 12px
+                line-height: 30px
+                padding: 0 15px
+                background-color: #4b4b4b2e
+                border-radius: 15px

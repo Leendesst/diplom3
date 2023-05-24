@@ -1,0 +1,121 @@
+.input
+    &__container
+        width: calc(100% - 10px)
+        margin-bottom: 5px
+        padding: 5px
+        border-radius: 5px
+        position: relative
+        background: #2b2b2b
+
+        &:last-child
+            margin-bottom: 2px
+
+        &__select
+            display: flex
+            flex-flow: column nowrap
+            margin: 0px
+            padding: 0 8px 8px 8px
+            max-height: calc(8em * 1.5)
+            opacity: 0
+            transition: opacity .2s linear
+            visibility: hidden
+            position: absolute
+            left: 0
+            right: 0
+            background: #2b2b2b
+            z-index: 1
+            box-shadow: 1px 10px 10px #000000a8
+            border-bottom-left-radius: 5px
+            border-bottom-right-radius: 5px
+            overflow: clip auto
+
+            &.active
+                opacity: 1
+                visibility: visible
+                &~label
+                    top: 4px
+                    font-size: .8em
+                    opacity: .8
+            
+            span
+                user-select: none
+                padding: 5px
+                &:hover
+                    background: #9b01017a
+                
+        textarea
+            min-width: calc(100% - 16px)
+            max-width: calc(100% - 16px)
+            min-height: 100px
+            max-height: 400px
+
+        input,textarea
+            width: calc(100% - 16px)
+            display: block
+            margin-top: 4px
+            padding: 8px
+            background: transparent
+            border: none
+            outline: none
+            color: white
+            font-family: 'Ubuntu'
+            position: relative
+
+            &::placeholder
+                opacity: 0
+                visibility: hidden
+                color: transparent
+
+            &:focus~label,&:not(:placeholder-shown)~label
+                top: 4px
+                font-size: .8em
+                opacity: .8
+
+        label
+            top: 1.1em
+            left: 12px
+            width: 100%
+            display: block
+            position: absolute
+            opacity: .4
+            cursor: text
+            transition: .1s linear
+            font-family: 'Ubuntu'
+            pointer-events: none
+
+    &__error
+        display: flex
+        justify-content: center
+        align-items: center
+        top: 50%
+        transform: translate(20px,-50%)
+        max-width: 350px
+        position: absolute
+        padding: 5px
+        border-radius: 5px
+        background-color: #b40000
+
+        +tablet()
+            position: relative
+            transform: unset
+            top: unset
+
+        &__container
+            position: absolute
+            top: 50%
+            left: 100%
+            width: 350px
+            transition: all .2s linear
+
+            +tablet()
+                position: relative
+                top: unset
+                left: unset
+                width: 100%
+                margin-top: 5px
+                margin-bottom: calc(-1em - 5px)
+                transform: scaleY(0)
+
+                &.fadeIn
+                    margin-bottom: unset
+                    transform: scaleY(1)

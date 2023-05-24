@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.187b48d6.chunk.css",
+    "main.js": "/static/js/main.1ad6c76a.chunk.js",
+    "main.js.map": "/static/js/main.1ad6c76a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.cf59614d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.cf59614d.js.map",
+    "static/js/2.82ab04a5.chunk.js": "/static/js/2.82ab04a5.chunk.js",
+    "static/js/2.82ab04a5.chunk.js.map": "/static/js/2.82ab04a5.chunk.js.map",
+    "static/js/3.387d9f12.chunk.js": "/static/js/3.387d9f12.chunk.js",
+    "static/js/3.387d9f12.chunk.js.map": "/static/js/3.387d9f12.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.187b48d6.chunk.css.map": "/static/css/main.187b48d6.chunk.css.map",
+    "static/js/2.82ab04a5.chunk.js.LICENSE.txt": "/static/js/2.82ab04a5.chunk.js.LICENSE.txt",
+    "static/media/App.sass": "/static/media/4iCv6KVjbNBYlgoCxCvjvmyNL4U.0b82445b.woff2",
+    "static/media/logo.146bda1b.png": "/static/media/logo.146bda1b.png",
+    "static/media/vk.7998cd57.svg": "/static/media/vk.7998cd57.svg",
+    "static/media/watsapp.bf8ee4a3.svg": "/static/media/watsapp.bf8ee4a3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cf59614d.js",
+    "static/js/2.82ab04a5.chunk.js",
+    "static/css/main.187b48d6.chunk.css",
+    "static/js/main.1ad6c76a.chunk.js"
+  ]
+}

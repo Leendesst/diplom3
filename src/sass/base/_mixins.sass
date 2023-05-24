@@ -1,0 +1,31 @@
+@function css-function( $function, $values... )
+	@return $function + unquote( '(' ) + $values + unquote( ')' )
+
+@function css-min( $values... )
+	@return css-function( min, $values )
+
+@function css-max( $values... )
+	@return css-function( max, $values )
+
+@function css-clamp( $values... )
+	@return css-function( clamp, $values )
+
+$tablet: 768px
+$semytablet: 1165px
+$mobile: 678px
+
+=desktop()
+	@media screen and (min-width: $tablet+1)
+		@content
+
+=semytablet()
+	@media screen and (max-width: $semytablet)
+		@content
+
+=tablet()
+	@media screen and (max-width: $tablet)
+		@content
+
+=mobile()
+	@media screen and (max-width: $mobile)
+		@content
